@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="new social network, share with all your friends thoughts, photos and funny jokes">
+    <title>G5</title>
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="logo-wrapper">
+                    <a href="#" class="logo">
+                        <picture>
+                            <source data-srcset="images/logo/logo.webp 1x, images/logo/logo@2x.webp 2x" type="image/webp">
+                            <img data-src="images/logo/logo.png" data-srcset="images/logo/logo@2x.png 2x" alt="G5" class="logo__img lazyload">
+                        </picture>
+                    </a>
+                </h1>
+                <nav class="navigation">
+                    <ul class="menu menu--margin">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link _active">My Profile</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Tasks</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Contacts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link _has-drop">Calendar</a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Lorem ipsum dolor</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link _has-drop">Worklog</a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Presence</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Vacation Plan</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search-form">
+                    <div class="search-form__field">
+                        <label for="search-form__input" class="search-form__label visually-hidden">Search:</label>
+                        <input type="text" id="search-form__input" class="search-form__input" placeholder="Search">
+                        <button class="search-form__btn icon-search-regular" type="submit" aria-label="Search the entire site"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="container">
+            <div class="page-content__inner">
+                <aside class="sidebar">
+                    <div class="profile-info _active" id="js-profile-info">
+                        <div class="profile-info__header">
+                            <span class="profile-info__notation">Lead</span>
+                            <figure class="profile-info__figure">
+                                <picture>
+                                    <source data-srcset="images/photo-1532910404247-7ee9488d7292.avif 1x, images/photo-1532910404247-7ee9488d7292@2x.avif 2x" type="image/avif">
+                                    <source data-srcset="images/photo-1532910404247-7ee9488d7292.wepb 1x, images/photo-1532910404247-7ee9488d7292@2x.wepb 2x" type="image/webp">
+                                    <img class="profile-info__img lazyload" data-src="images/photo-1532910404247-7ee9488d7292.jpg" data-srcset="images/photo-1532910404247-7ee9488d7292.jpg 2x" alt="avatar">
+                                </picture>
+                            </figure>
+                            <h2 class="profile-info__name">Kate Sluyter</h2>
+                            <p class="profile-info__prof">UI/UX designer, Illustrator</p>
+                            <a href="#" class="profile-info__location">Kharkiv, Ukraine</a>
+                            <button class="profile-info__btn btn" type="button">Edit Profile</button>
+                        </div>
+                        <div class="profile-info__body">
+                            <a href="tel:380503050574" class="profile-info__contact profile-info__contact--phone">+ 38 (050) 30 50 574</a>
+                            <a href="skype:art91?chat" class="profile-info__contact profile-info__contact--skype">art91</a>
+                            <a href="mailto:kate.sluyter@g5e.com" class="profile-info__contact profile-info__contact--mail">kate.sluyter@g5e.com</a>
+                        </div>
+                        <div class="profile-info__footer" id="js-footer-slide">
+                            <div class="profile-info__interests">
+                                <p class="profile-info__interests-title">INTERESTS</p>
+                                <div class="profile-info__tags tags">
+                                    <span class="tags__item tags__item--book">Game of Thrones</span>
+                                    <span class="tags__item tags__item--book">Green Mile</span>
+                                    <span class="tags__item tags__item--book">Haze</span>
+                                    <span class="tags__item tags__item--movie">Silicon Valley</span>
+                                    <span class="tags__item tags__item--movie">Wild West</span>
+                                    <span class="tags__item tags__item--music">Wild West</span>
+                                    <span class="tags__item tags__item--music">Imagine Dragons</span>
+                                    <span class="tags__item tags__item--game">Mahjong</span>
+                                    <span class="tags__item tags__item--game">Mortal Kombat</span>
+                                </div>
+                            </div>
+                            <button class="profile-info__btn-slide btn-slide _active" type="button" id="js-btn-slide">
+                                <span class="btn-slide__text _visible">More information</span>
+                                <span class="btn-slide__text _hide">Hide information</span>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+                <main class="main">
+                    <article class="post post--margin">
+                        <div class="post__header">
+                            <div class="post__author">
+                                <figure class="post__author-photo">
+                                    <picture>
+                                        <source data-srcset="images/taylor-hernandez-497488-unsplash.webp 1x, images/taylor-hernandez-497488-unsplash@2x.webp 2x" type="image/webp">
+                                        <img class="lazyload" data-src="images/taylor-hernandez-497488-unsplash.jpg" data-srcset="images/taylor-hernandez-497488-unsplash@2x.jpg" alt="photo author">
+                                    </picture>
+                                </figure>
+                                <div class="post__author-info">
+                                    <h2 class="post__author-name">Anastasia Semenchenko</h2>
+                                    <span class="post__time">13 July 10:30</span>
+                                </div>
+                                <button class="post__btn-set btn-set" type="button" aria-label="post settings"></button>
+                            </div>
+                            <p class="post__text">All post photos ten years ago and now, I can too</p>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__carousel js-post-carousel swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/annie-spratt-217517-unsplash.avif 1x, images/annie-spratt-217517-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/annie-spratt-217517-unsplash.webp 1x, images/annie-spratt-217517-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" data-src="images/annie-spratt-217517-unsplash.jpg" data-srcset="images/annie-spratt-217517-unsplash@2x.jpg" alt="There are map, pencil, travel bag, camera and books in the image">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/guilherme-stecanella-587579-unsplash.avif 1x, guilherme-stecanella-587579-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/guilherme-stecanella-587579-unsplash.webp 1x, guilherme-stecanella-587579-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" data-src="images/guilherme-stecanella-587579-unsplash.jpg" data-srcset="guilherme-stecanella-587579-unsplash@2x.jpg" alt="In the image there are a lot of cars, woman with a traveel bag among cars on the road">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.avif 1x, images/dino-reichmuth-115620-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.webp 1x, images/dino-reichmuth-115620-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" src="images/dino-reichmuth-115620-unsplash.jpg" data-srcset="images/dino-reichmuth-115620-unsplash@2x.jpg" alt="There are minivan, road and big mountains in the image">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="post__tools">
+                                    <button class="post__counter btn-counter _likes" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23.432" viewBox="0 0 28.3 23.432"><defs></defs><path class="a" d="M114.1,237.311a1.537,1.537,0,0,1-1.013-.381c-1.058-.926-2.079-1.8-2.979-2.562l0,0a55.414,55.414,0,0,1-6.505-6.106,9.752,9.752,0,0,1-2.6-6.384,8.189,8.189,0,0,1,2.079-5.593A7.046,7.046,0,0,1,108.32,214a6.59,6.59,0,0,1,4.117,1.421,8.426,8.426,0,0,1,1.664,1.738,8.418,8.418,0,0,1,1.664-1.738A6.591,6.591,0,0,1,119.883,214a7.046,7.046,0,0,1,5.241,2.281,8.189,8.189,0,0,1,2.079,5.593,9.751,9.751,0,0,1-2.6,6.384,55.4,55.4,0,0,1-6.5,6.106c-.9.768-1.924,1.64-2.985,2.567a1.538,1.538,0,0,1-1.013.38Z" transform="translate(-101 -214)"/></svg>
+                                        <span class="js-counter-likes">155</span> Likes
+                                    </button>
+                                    <button class="post__counter btn-counter _comments" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.202" height="24.211" viewBox="0 0 24.202 24.211"><g transform="translate(0.102 0.1)"><g transform="translate(0 0)"><path class="a" d="M135.487,209.239a12,12,0,0,0-17.767,16.1,4.506,4.506,0,0,1-1.89,2.187,1.12,1.12,0,0,0,.322,2.111,5.712,5.712,0,0,0,.85.066,7.762,7.762,0,0,0,4.314-1.4,12.006,12.006,0,0,0,14.173-19.064Zm-.96,16.013a10.651,10.651,0,0,1-12.916,1.654.676.676,0,0,0-.759.045,6.464,6.464,0,0,1-3.766,1.383,6.836,6.836,0,0,0,2.056-2.84.683.683,0,0,0-.116-.724,10.645,10.645,0,1,1,15.5.483Zm0,0" transform="translate(-115.001 -205.72)"/></g></g></svg>
+                                        <span class="js-counter-comments">25</span> Comments
+                                    </button>
+                                    <div class="swiper-pagination"></div>
+                                    <button class="post__btn-share btn-share" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.996" height="22.043" viewBox="0 0 21.996 22.043"><g transform="translate(0.2 0.247)"><g transform="translate(0 0)"><path class="a" d="M72.592,153.546v4.719a3.378,3.378,0,0,1-3.374,3.374H54.37A3.379,3.379,0,0,1,51,158.265V143.418a3.379,3.379,0,0,1,3.374-3.375h5.855a.844.844,0,1,1,0,1.687H54.37a1.689,1.689,0,0,0-1.687,1.687v14.848a1.689,1.689,0,0,0,1.687,1.687H69.218a1.689,1.689,0,0,0,1.687-1.687v-4.719a.844.844,0,1,1,1.687,0ZM68.838,145.4" transform="translate(-50.996 -140.043)"/></g><path class="b" d="M219.041,155.291a.824.824,0,0,1-.812-.683l-.11-.632c0-.011,0-.022-.005-.033a8.26,8.26,0,0,1,2.909-7.455,7.1,7.1,0,0,1,4.306-1.526v-2.468a.824.824,0,0,1,1.405-.584l5.465,5.438a.824.824,0,0,1,0,1.165L226.738,154a.824.824,0,0,1-1.408-.581v-2.561c-1.229,0-3.453.486-5.253,3.48l-.329.549A.823.823,0,0,1,219.041,155.291Zm7.03-8.706a6.046,6.046,0,0,0-3.933,1.116.516.516,0,0,1-.045.04,6.518,6.518,0,0,0-2.335,4.224,7.088,7.088,0,0,1,6.527-2.679.824.824,0,0,1,.693.813v1.327l3.476-3.493-3.476-3.458v1.286a.824.824,0,0,1-.824.824Z" transform="translate(-210.982 -141.6)"/></g></svg>
+                                        <span>Share</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__footer">
+                            <form class="comment-form">
+                                <div class="comment-form__field">
+                                    <figure class="comment-form__figure">
+                                        <picture>
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.avif 1x, images/photo-1532910404247-7ee9488d7292@2x.avif 2x" type="image/avif">
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.wepb 1x, images/photo-1532910404247-7ee9488d7292@2x.wepb 2x" type="image/webp">
+                                            <img class="profile-info__img lazyload" data-src="images/photo-1532910404247-7ee9488d7292.jpg" data-srcset="images/photo-1532910404247-7ee9488d7292.jpg 2x" alt="avatar">
+                                        </picture>
+                                    </figure>
+                                    <label for="comment-form__input-00001" class="comment-form__label visually-hidden">Write your Comment</label>
+                                    <input type="text" id="comment-form__input-00001" class="comment-form__input" placeholder="Write your Comment">
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="post post--margin">
+                        <div class="post__header">
+                            <div class="post__author">
+                                <figure class="post__author-photo">
+                                    <picture>
+                                        <source data-srcset="images/taylor-hernandez-497488-unsplash.webp 1x, images/taylor-hernandez-497488-unsplash@2x.webp 2x" type="image/webp">
+                                        <img class="lazyload" data-src="images/taylor-hernandez-497488-unsplash.jpg" data-srcset="images/taylor-hernandez-497488-unsplash@2x.jpg" alt="photo author">
+                                    </picture>
+                                </figure>
+                                <div class="post__author-info">
+                                    <h2 class="post__author-name">Kira Naitly</h2>
+                                    <span class="post__time">12 July 10:30</span>
+                                </div>
+                                <button class="post__btn-set btn-set" type="button" aria-label="post settings"></button>
+                            </div>
+                            <p class="post__text">Made neat an on be gave show snug tore. Decisively advantages nor expression unpleasing she led met. Up hung mr we give rest half. Words to up style of since world.</p>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__carousel js-post-carousel swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/guilherme-stecanella-587579-unsplash.avif 1x, guilherme-stecanella-587579-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/guilherme-stecanella-587579-unsplash.webp 1x, guilherme-stecanella-587579-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" data-src="images/guilherme-stecanella-587579-unsplash.jpg" data-srcset="guilherme-stecanella-587579-unsplash@2x.jpg" alt="In the image there are a lot of cars, woman with a traveel bag among cars on the road">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.avif 1x, images/dino-reichmuth-115620-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.webp 1x, images/dino-reichmuth-115620-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" src="images/dino-reichmuth-115620-unsplash.jpg" data-srcset="images/dino-reichmuth-115620-unsplash@2x.jpg" alt="There are minivan, road and big mountains in the image">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="post__tools">
+                                    <button class="post__counter btn-counter _likes _active" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23.432" viewBox="0 0 28.3 23.432"><defs></defs><path class="a" d="M114.1,237.311a1.537,1.537,0,0,1-1.013-.381c-1.058-.926-2.079-1.8-2.979-2.562l0,0a55.414,55.414,0,0,1-6.505-6.106,9.752,9.752,0,0,1-2.6-6.384,8.189,8.189,0,0,1,2.079-5.593A7.046,7.046,0,0,1,108.32,214a6.59,6.59,0,0,1,4.117,1.421,8.426,8.426,0,0,1,1.664,1.738,8.418,8.418,0,0,1,1.664-1.738A6.591,6.591,0,0,1,119.883,214a7.046,7.046,0,0,1,5.241,2.281,8.189,8.189,0,0,1,2.079,5.593,9.751,9.751,0,0,1-2.6,6.384,55.4,55.4,0,0,1-6.5,6.106c-.9.768-1.924,1.64-2.985,2.567a1.538,1.538,0,0,1-1.013.38Z" transform="translate(-101 -214)"/></svg>
+                                        <span class="js-counter-likes">255</span> Likes
+                                    </button>
+                                    <button class="post__counter btn-counter _comments" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.202" height="24.211" viewBox="0 0 24.202 24.211"><g transform="translate(0.102 0.1)"><g transform="translate(0 0)"><path class="a" d="M135.487,209.239a12,12,0,0,0-17.767,16.1,4.506,4.506,0,0,1-1.89,2.187,1.12,1.12,0,0,0,.322,2.111,5.712,5.712,0,0,0,.85.066,7.762,7.762,0,0,0,4.314-1.4,12.006,12.006,0,0,0,14.173-19.064Zm-.96,16.013a10.651,10.651,0,0,1-12.916,1.654.676.676,0,0,0-.759.045,6.464,6.464,0,0,1-3.766,1.383,6.836,6.836,0,0,0,2.056-2.84.683.683,0,0,0-.116-.724,10.645,10.645,0,1,1,15.5.483Zm0,0" transform="translate(-115.001 -205.72)"/></g></g></svg>
+                                        <span class="js-counter-comments">25</span> Comments
+                                    </button>
+                                    <div class="swiper-pagination"></div>
+                                    <button class="post__btn-share btn-share" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.996" height="22.043" viewBox="0 0 21.996 22.043"><g transform="translate(0.2 0.247)"><g transform="translate(0 0)"><path class="a" d="M72.592,153.546v4.719a3.378,3.378,0,0,1-3.374,3.374H54.37A3.379,3.379,0,0,1,51,158.265V143.418a3.379,3.379,0,0,1,3.374-3.375h5.855a.844.844,0,1,1,0,1.687H54.37a1.689,1.689,0,0,0-1.687,1.687v14.848a1.689,1.689,0,0,0,1.687,1.687H69.218a1.689,1.689,0,0,0,1.687-1.687v-4.719a.844.844,0,1,1,1.687,0ZM68.838,145.4" transform="translate(-50.996 -140.043)"/></g><path class="b" d="M219.041,155.291a.824.824,0,0,1-.812-.683l-.11-.632c0-.011,0-.022-.005-.033a8.26,8.26,0,0,1,2.909-7.455,7.1,7.1,0,0,1,4.306-1.526v-2.468a.824.824,0,0,1,1.405-.584l5.465,5.438a.824.824,0,0,1,0,1.165L226.738,154a.824.824,0,0,1-1.408-.581v-2.561c-1.229,0-3.453.486-5.253,3.48l-.329.549A.823.823,0,0,1,219.041,155.291Zm7.03-8.706a6.046,6.046,0,0,0-3.933,1.116.516.516,0,0,1-.045.04,6.518,6.518,0,0,0-2.335,4.224,7.088,7.088,0,0,1,6.527-2.679.824.824,0,0,1,.693.813v1.327l3.476-3.493-3.476-3.458v1.286a.824.824,0,0,1-.824.824Z" transform="translate(-210.982 -141.6)"/></g></svg>
+                                        <span>Share</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__footer">
+                            <form class="comment-form">
+                                <div class="comment-form__field">
+                                    <figure class="comment-form__figure">
+                                        <picture>
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.avif 1x, images/photo-1532910404247-7ee9488d7292@2x.avif 2x" type="image/avif">
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.wepb 1x, images/photo-1532910404247-7ee9488d7292@2x.wepb 2x" type="image/webp">
+                                            <img class="profile-info__img lazyload" data-src="images/photo-1532910404247-7ee9488d7292.jpg" data-srcset="images/photo-1532910404247-7ee9488d7292.jpg 2x" alt="avatar">
+                                        </picture>
+                                    </figure>
+                                    <label for="comment-form__input-00002" class="comment-form__label visually-hidden">Write your Comment</label>
+                                    <input type="text" id="comment-form__input-00002" class="comment-form__input" placeholder="Write your Comment">
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="post post--margin">
+                        <div class="post__header">
+                            <div class="post__author">
+                                <figure class="post__author-photo">
+                                    <picture>
+                                        <source data-srcset="images/taylor-hernandez-497488-unsplash.webp 1x, images/taylor-hernandez-497488-unsplash@2x.webp 2x" type="image/webp">
+                                        <img class="lazyload" data-src="images/taylor-hernandez-497488-unsplash.jpg" data-srcset="images/taylor-hernandez-497488-unsplash@2x.jpg" alt="photo author">
+                                    </picture>
+                                </figure>
+                                <div class="post__author-info">
+                                    <h2 class="post__author-name">Ivan Petrenko</h2>
+                                    <span class="post__time">10 July 10:30</span>
+                                </div>
+                                <button class="post__btn-set btn-set" type="button" aria-label="post settings"></button>
+                            </div>
+                            <p class="post__text">All post photos ten years ago and now, I can too</p>
+                        </div>
+                        <div class="post__body">
+                            <div class="post__carousel js-post-carousel swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="post__figure">
+                                            <picture>
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.avif 1x, images/dino-reichmuth-115620-unsplash@2x.avif 1x" type="image/avif">
+                                                <source data-srcset="images/dino-reichmuth-115620-unsplash.webp 1x, images/dino-reichmuth-115620-unsplash@2x.webp 1x" type="image/webp">
+                                                <img class="lazyload" src="images/dino-reichmuth-115620-unsplash.jpg" data-srcset="images/dino-reichmuth-115620-unsplash@2x.jpg" alt="There are minivan, road and big mountains in the image">
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="post__tools">
+                                    <button class="post__counter btn-counter _likes" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23.432" viewBox="0 0 28.3 23.432"><defs></defs><path class="a" d="M114.1,237.311a1.537,1.537,0,0,1-1.013-.381c-1.058-.926-2.079-1.8-2.979-2.562l0,0a55.414,55.414,0,0,1-6.505-6.106,9.752,9.752,0,0,1-2.6-6.384,8.189,8.189,0,0,1,2.079-5.593A7.046,7.046,0,0,1,108.32,214a6.59,6.59,0,0,1,4.117,1.421,8.426,8.426,0,0,1,1.664,1.738,8.418,8.418,0,0,1,1.664-1.738A6.591,6.591,0,0,1,119.883,214a7.046,7.046,0,0,1,5.241,2.281,8.189,8.189,0,0,1,2.079,5.593,9.751,9.751,0,0,1-2.6,6.384,55.4,55.4,0,0,1-6.5,6.106c-.9.768-1.924,1.64-2.985,2.567a1.538,1.538,0,0,1-1.013.38Z" transform="translate(-101 -214)"/></svg>
+                                        <span class="js-counter-likes">155</span> Likes
+                                    </button>
+                                    <button class="post__counter btn-counter _comments" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24.202" height="24.211" viewBox="0 0 24.202 24.211"><g transform="translate(0.102 0.1)"><g transform="translate(0 0)"><path class="a" d="M135.487,209.239a12,12,0,0,0-17.767,16.1,4.506,4.506,0,0,1-1.89,2.187,1.12,1.12,0,0,0,.322,2.111,5.712,5.712,0,0,0,.85.066,7.762,7.762,0,0,0,4.314-1.4,12.006,12.006,0,0,0,14.173-19.064Zm-.96,16.013a10.651,10.651,0,0,1-12.916,1.654.676.676,0,0,0-.759.045,6.464,6.464,0,0,1-3.766,1.383,6.836,6.836,0,0,0,2.056-2.84.683.683,0,0,0-.116-.724,10.645,10.645,0,1,1,15.5.483Zm0,0" transform="translate(-115.001 -205.72)"/></g></g></svg>
+                                        <span class="js-counter-comments">25</span> Comments
+                                    </button>
+                                    <div class="swiper-pagination"></div>
+                                    <button class="post__btn-share btn-share" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.996" height="22.043" viewBox="0 0 21.996 22.043"><g transform="translate(0.2 0.247)"><g transform="translate(0 0)"><path class="a" d="M72.592,153.546v4.719a3.378,3.378,0,0,1-3.374,3.374H54.37A3.379,3.379,0,0,1,51,158.265V143.418a3.379,3.379,0,0,1,3.374-3.375h5.855a.844.844,0,1,1,0,1.687H54.37a1.689,1.689,0,0,0-1.687,1.687v14.848a1.689,1.689,0,0,0,1.687,1.687H69.218a1.689,1.689,0,0,0,1.687-1.687v-4.719a.844.844,0,1,1,1.687,0ZM68.838,145.4" transform="translate(-50.996 -140.043)"/></g><path class="b" d="M219.041,155.291a.824.824,0,0,1-.812-.683l-.11-.632c0-.011,0-.022-.005-.033a8.26,8.26,0,0,1,2.909-7.455,7.1,7.1,0,0,1,4.306-1.526v-2.468a.824.824,0,0,1,1.405-.584l5.465,5.438a.824.824,0,0,1,0,1.165L226.738,154a.824.824,0,0,1-1.408-.581v-2.561c-1.229,0-3.453.486-5.253,3.48l-.329.549A.823.823,0,0,1,219.041,155.291Zm7.03-8.706a6.046,6.046,0,0,0-3.933,1.116.516.516,0,0,1-.045.04,6.518,6.518,0,0,0-2.335,4.224,7.088,7.088,0,0,1,6.527-2.679.824.824,0,0,1,.693.813v1.327l3.476-3.493-3.476-3.458v1.286a.824.824,0,0,1-.824.824Z" transform="translate(-210.982 -141.6)"/></g></svg>
+                                        <span>Share</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post__footer">
+                            <form class="comment-form">
+                                <div class="comment-form__field">
+                                    <figure class="comment-form__figure">
+                                        <picture>
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.avif 1x, images/photo-1532910404247-7ee9488d7292@2x.avif 2x" type="image/avif">
+                                            <source data-srcset="images/photo-1532910404247-7ee9488d7292.wepb 1x, images/photo-1532910404247-7ee9488d7292@2x.wepb 2x" type="image/webp">
+                                            <img class="profile-info__img lazyload" data-src="images/photo-1532910404247-7ee9488d7292.jpg" data-srcset="images/photo-1532910404247-7ee9488d7292.jpg 2x" alt="avatar">
+                                        </picture>
+                                    </figure>
+                                    <label for="comment-form__input-00003" class="comment-form__label visually-hidden">Write your Comment</label>
+                                    <input type="text" id="comment-form__input-00003" class="comment-form__input" placeholder="Write your Comment">
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+
+</body>
+</html>
